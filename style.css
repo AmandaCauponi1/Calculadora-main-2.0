@@ -1,0 +1,207 @@
+:root{
+    ---very-dark-desaturated-blue1 : hsl(222, 26%, 31%);
+    ---Very-dark-desaturated-blue2: hsl(223, 31%, 20%);
+    ---Very-dark-desaturated-blue3: hsl(224, 36%, 15%);
+
+
+    ---Desaturated-dark-blue: hsl(225, 21%, 49%);
+    ---Desaturated-dark-blue: hsl(224, 28%, 35%);
+    ---Red: hsl(6, 63%, 50%);
+    ---Dark-red: hsl(6, 70%, 34%);
+    ---Light-grayish-orange: hsl(30, 25%, 89%);
+    ---Grayish-orange: hsl(28, 16%, 65%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: var(---very-dark-desaturated-blue1);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1.4rem;
+}
+.boxMain1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16rem;
+    color: white;
+}
+.boxMain1 > p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.choise{
+    display: flex;
+   flex-direction: column;
+   
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxChoise{
+    width: 3.6rem;
+    background-color: var(---Very-dark-desaturated-blue2);
+    border-radius: 50px;
+}
+.btnChoise{
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+#result{
+    background-color: var(---Very-dark-desaturated-blue3);
+    border: none;
+    height: 8rem;
+    width: 30rem;
+    color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: end;
+}
+#result::placeholder{
+    color: white;
+}
+.boxNumbers{
+    background-color: var(---Very-dark-desaturated-blue2);
+    width: 30rem;
+    height: 20rem;
+    padding: 20px;
+    padding-left: 2rem;
+    border-radius: 10px;
+}
+.boxNumbers1{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.boxNumbers2{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.boxNumbers3{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.boxNumbers4{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 14px;
+}
+.numbers:hover{
+    background-color: white;
+}
+.btns{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+#pointer{
+    font-size: 2.6rem;
+}
+.numbers{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 1px 3px 1px hsl(28, 16%, 65%);
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .1s ease;
+
+}
+.numbers:active{
+    transform: scale(.9);
+}
+.del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 1px 3px 1px hsl(224, 28%, 35%);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform .1s ease;
+}
+.del:hover{
+    background-color: hsl(225, 24%, 59%);
+}
+.del:active{
+    transform: scale(.9);
+}
+#reset{
+   width: 12rem;
+   height: 2.5rem;
+   border-radius: 10px;
+   color: white;
+   background-color: hsl(225, 21%, 49%);
+   box-shadow: 1px 3px 1px hsl(224, 28%, 35%);
+   font-weight: bold;
+   font-size: 1.2rem;
+   transition: transform .1s ease;
+}
+#reset:hover{
+    background-color: hsl(225, 24%, 59%);
+}
+#reset:active{
+    transform: scale(.9);
+}
+#equal{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 1px 3px 1px hsl(6, 70%, 34%);
+    color: white;
+    border: none;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    transition: transform .1s ease;
+}
+#equal:hover{
+    background-color: hsl(6, 61%, 61%);
+}
+#equal:active{
+    transform: scale(.9);
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
