@@ -22,6 +22,7 @@
 body{
     height: 100vh;
     background-color: var(---very-dark-desaturated-blue1);
+    overflow: hidden;
 }
 main{
     display: flex;
@@ -202,6 +203,36 @@ main{
 button{
     border: none;
     cursor: pointer;
+}
+@media (max-width: 495px) {
+   .boxMain1{
+    gap: 9rem;
+   }
+    #result{
+        width: 22rem;
+    }
+    .boxNumbers{
+        width: 22rem;
+        height: 54vh;
+       
+        padding: 1.4rem;
+        
+    }
+    .boxNumbers1, .boxNumbers2, .boxNumbers3, .boxNumbers4{
+        gap: 1.5rem;
+    }
+    button.numbers{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    #reset{
+        width: 8.3rem;
+        height: 4rem;
+    }
+    #equal{
+        width: 8.3rem;
+        height: 4rem;
+    }
 }
 
 
